@@ -12,9 +12,7 @@
     <button id="search-button">Traži</button>
   </div>
 
-  <div id="search-results">
-    <!-- Ovdje će se prikazati rezultati pretrage -->
-  </div>
+ <input class="search-form__query ng-pristine ng-untouched ng-valid ng-empty" type="text" placeholder="Search Web" ng-change="getSuggestions()" ng-keydown="switchSugg($event)" ng-model="inputValue" ng-model-options="{debounce: 300}">
 
   <script src="script.js"></script>
 </body>
